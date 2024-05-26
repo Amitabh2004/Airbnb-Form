@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html { 
+    background: url(image/bg-image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  body{
+    position: relative;
+  }
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.white-logo{
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header-contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+
+
+}
+.h-link{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+}
+.form-body{
+    position: absolute;
+    top: 120px;
+    left:200px;
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 360px;
+    width: 330px;
+    padding: 20px;
+}
+.form-inside-body{
+    display:flex;
+    flex-direction: column;
+}
+.form-body .para{
+    font-weight: 600;
+    font-size: 28px;
+}
+.actual-form{
+    display: flex;
+    flex-direction: column;
+}
+.where-para{
+    font-size: 9.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.para{
+    margin-bottom: 10px;
+}
+.where-input{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 31px;
+    border:1px solid rgb(230, 226, 226);
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.dates .date-box{
+    display: flex;
+    width:159px;
+    height: 31px;
+    padding-left: 5px;
+    color: grey;
+    border:1px solid rgb(230, 226, 226);
+}
+.guests{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.guest-input{
+    padding-left: 5px;
+    height: 31px;
+    border:1px solid rgb(230, 226, 226);
+    cursor:pointer;
+}
+.terms{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; 
+}
+.terms-para{
+    margin-top: 11px;
+    margin-left: 4px;
+    font-size: 12px;
+    font-style:italic ;
+}
+
+
+.terms-og{
+    color: blue;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.search-div{
+    display:flex;
+    justify-content: flex-end;
+}
+.search-btn{
+    margin-top: 11px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    font-weight: 500;
+    background-color: rgb(218, 102, 48);
+    cursor:pointer;
+    
+}
+
+@media (width<=740px){
+    .form-body{
+        display:block;
+        margin:0 auto;
+        left: 0;
+        right: 0;
+    }
+}
